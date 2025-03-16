@@ -4,20 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ColoRawe - Your Dream Nike</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <h1 class="logo">C&R ColoRawe</h1>
+            <a href="./index.html"><img src="./photos/logo.webp" alt="logo"></a>
             <nav>
                 <ul class="nav-list">
-                    <li><a href="1">Main page</a></li>
-                    <li><a href="2">Benefits</a></li>
-                    <li><a href="3">Advantages</a></li>
-                    <li><a href="4">Reviews</a></li>
-                    <li><a href="5">Order</a></li>
-                    <li><a href="6">Contacts</a></li>
+                    <li><a href="#" class="nav-link">Main page</a></li>
+                    <li><a href="#" class="nav-link">Benefits</a></li>
+                    <li><a href="#" class="nav-link">Advantages</a></li>
+                    <li><a href="#" class="nav-link">Reviews</a></li>
+                    <li><a href="#" class="nav-link">Order</a></li>
+                    <li><a href="#" class="nav-link">Contacts</a></li>
                 </ul>
             </nav>
         </div>
@@ -25,50 +30,80 @@
     <main>
         <section class="hero">
             <div class="container">
+                <a href="./index.html"><img class="hero-img" src="./photos/logo.webp" alt="logo"></a>
+                <p class="hero-desk">С&R</p> 
+                <h1 class="hero-subjekt">ColoRawe</h1>
                 <h2 class="hero-title">Your dream Nike</h2>
-                <p class="hero-text">The best custom Nike sneakers in a variety of vibrant colors.</p>
-                <img class="hero-image" src="./photos/shues.jpg" alt="Nike Shoes">
+                <p class="hero-text">On this site you can find custom Nike sneakers of your dreams. The original company caт`t create such beautiful<br>sneakers as we do.<br>Good luck finding your way in the world of custom sneakers.</p>
                 <button class="hero-button">Buy my Nike</button>
             </div>
         </section>
         <section class="features">
             <div class="container">
-                <div class="feature">
-                    <img src="./photos/stars.jpg" alt="Premium Quality">
-                    <h3>Premium Quality</h3>
-                </div>
-                <div class="feature">
-                    <img src="./photos/paint.jpg" alt="Indelible paint">
-                    <h3>Indelible paint</h3>
-                </div>
-                <div class="feature">
-                    <img src="./photos/delivery.jpg" alt="Fast shipping">
-                    <h3>Fast shipping</h3>
-                </div>
+                <ul>
+                    <li>
+                        <img src="./photos/stars.webp" alt="Premium Quality">
+                    <h3 class="features-titels">Premium Quality</h3>
+                    </li>
+                    <li>
+                        <img src="./photos/paints.webp" alt="Indelible paint">
+                        <h3 class="features-titels">Indelible paint</h3> 
+                    </li>
+                    <li>
+                        <img src="./photos/bus.webp" alt="Fast shipping">
+                        <h3 class="features-titels">Fast shipping</h3>
+                    </li>
+                </ul>
             </div>
         </section>
         <section class="reviews">
             <div class="container">
-                <h2 class="section-title">Reviews</h2>
-                <div class="review">
-                    <p>"Sneakers are comfortable and will last a long time."</p>
+                <h2 class="reviews-titel">Reviews</h2>
+                 <ul>
+                    <li>
+                        <p class="reviews-text">Sneakers are very<br>comfortable and well<br>painted, nothing has<br>worn off in a year.</p>
+                        <p class="reviews-date">25.11</p>
+                      <div class="reviews-box">  
+                        <img class="reviews-img" src="./photos/john.webp" alt="john">
+                    <div>
+                        <h3 class="reviews-name">John Teylor</h3>
+                        <p class="reviews-dask" >With us from 2018</p>
+                    </div>
+                </div>  
+                    </li>
+                    <li>
+                        <p class="reviews-text">I'm very happy with<br>this color scheme.<br>They match all my<br>clothes.</p>
+                        <p class="reviews-date">05.01</p>
+                      <div class="reviews-box">
+                        <img class="reviews-img" src="./photos/eisabet.webp" alt="elisabet">
+                    <div>
+                        <h3  class="reviews-name">Elizabeth Garsia</h3>
+                        <p class="reviews-dask">With us from 2020</p>
+                    </div>
                 </div>
-                <div class="review">
-                    <p>"Very happy with this color palette!"</p>
-                </div>
-                <div class="review">
-                    <p>"Perfect if you need to stand out!"</p>
-                </div>
+                    </li>
+                    <li>
+                        <p class="reviews-text">Just right if you need<br>to go to a party.<br>I use them actively,<br>the paint is super.</p>
+                        <p class="reviews-date">18.06</p>
+                    <div class="reviews-box">
+                        <img class="reviews-img" src="./photos/tom.webp" alt="tom">
+                      <div>
+                        <h3 h3  class="reviews-name">Tom Maquare</h3>
+                        <p class="reviews-dask">With us from 2019</p>
+                   </div>
+                   <div>
+                    </li>
+                 </ul>
             </div>
         </section>
         <section class="order">
             <div class="container">
                 <h2 class="section-title">Order</h2>
                 <form class="order-form">
-                    <input type="email" placeholder="Write your email">
-                    <input type="text" placeholder="Your Country">
-                    <input type="text" placeholder="Your City">
-                    <input type="text" placeholder="Your Address">
+                    <input class="order-input" type="email" placeholder="Write your email">
+                    <input class="order-input" type="text" placeholder="Your Country">
+                    <input class="order-input" type="text" placeholder="Your City">
+                    <input class="order-input" type="text" placeholder="Your Address">
                     <button class="order-button">Order my Nike</button>
                 </form>
             </div>
@@ -76,8 +111,32 @@
     </main>
     <footer class="footer">
         <div class="container">
-            <p class="footer-text">© 2024 ColoRawe. All rights reserved.</p>
-            <p>Contact us: ColoRawe_support@gmail.com</p>
+            <ul class="footer-box">
+                <li>
+                    <ul class="footer-items">
+                        <li><p class="footer-text">Have a question?</p></li>
+                        <li><p class="footer-text">Have a proposal for cooperation?</p></li>
+                        <li><p class="footer-text">Advertising questions?</p></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="footer-list">
+                        <li><a class="footer-link" href="">ColoRawe_support@gmail.com</a></li>
+                        <li><a class="footer-link" href="">ColoRawe_Cooperation@gmail.com</a></li>
+                        <li><a class="footer-link" href="">ColoRawe_Advertising@gmail.com</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="footer-wrap">
+                <div>
+            <p class="footer-name">© 2024 ColoRawe. All rights reserved.</p>
+            <p class="footer-name">Contact us: ColoRawe_support@gmail.com</p>
+        </div>         
+            <div>
+            <a class="footer-img" href="./index.html"><img src="./photos/logo.webp" alt="logo"></a>
+                <p class="footer-desk">С&R</p> 
+            </div>
+            </div>
         </div>
     </footer>
 </body>
