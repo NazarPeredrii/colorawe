@@ -37,11 +37,24 @@ padding-bottom: 14px;
 font-size: 24px;
 font-weight: 300;
 line-height: 1.16;
+display: flex;
+align-items: center;
+gap: 15px;
 }
 
 .nav-link:hover{
-    color: #FFF;
+    color: violet;
+    .nav-ikon{
+        fill: violet;
+    }
 }
+
+.nav-ikon{
+    width: 20px;
+    height: 15px;
+    fill: white;
+}
+
 
 
 .hero {
@@ -283,6 +296,37 @@ font-weight: 400;
 line-height: 1.16;
 }
 
+
+.reviews-ikon{
+    width: 20px;
+    height: 20px;
+    fill: gray;
+}
+
+
+
+.reviews-list{
+    display: flex;
+    gap: 10px;
+}
+
+.reviews-link{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reviews-link:hover{
+    background-color: red;
+    .reviews-ikon{
+        fill: white;
+    }
+}
+
+
 .section-titel{
     color: #FFF;
 
@@ -306,7 +350,58 @@ line-height: 1.17;
 }
 
 
+.kilent{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
+
+.kilent-titel{
+    color: #212121;
+
+text-align: center;
+font-family: Roboto;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1.08px;
+
+margin-bottom: 50px;
+}
+
+
+
+
+.klient-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.klient-link{
+    width: 198px;
+    height: 100px;
+    outline: 3px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    
+}
+
+.klient-link:hover{
+    outline: 3px solid red;
+    .klient-ikon{
+        fill: red;
+    }
+}
+
+.klient-ikon{
+    width: 80px;
+    height: 80px;
+    fill: #FFF;
+}
 
 
 .order {
