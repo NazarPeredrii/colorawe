@@ -17,12 +17,12 @@
             <a href="./index.html"><img src="./photos/logo.webp" alt="logo"></a>
             <nav>
                 <ul class="nav-list">
-                    <li><a href="#" class="nav-link">Main page</a></li>
-                    <li><a href="#" class="nav-link">Benefits</a></li>
-                    <li><a href="#" class="nav-link">Advantages</a></li>
-                    <li><a href="#" class="nav-link">Reviews</a></li>
-                    <li><a href="#" class="nav-link">Order</a></li>
-                    <li><a href="#" class="nav-link">Contacts<svg class="nav-ikon">
+                    <li class="nav-item"><a href="#" class="nav-link">Main page</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Benefits</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Advantages</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Reviews</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Order</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contacts<svg class="nav-ikon">
                         <use href="./photos/symbol-defs.svg#icon-envelope"></use>
                     </svg></a></li>
                 </ul>
@@ -37,23 +37,28 @@
                 <h1 class="hero-subjekt">ColoRawe</h1>
                 <h2 class="hero-title">Your dream Nike</h2>
                 <p class="hero-text">On this site you can find custom Nike sneakers of your dreams. The original company caт`t create such beautiful<br>sneakers as we do.<br>Good luck finding your way in the world of custom sneakers.</p>
-                <button class="hero-button">Buy my Nike</button>
+                <button class="hero-button" data-modal-open >Buy my Nike</button>
             </div>
         </section>
-        <section class="features">
+        <section class="features" id="features">
             <div class="container">
                 <ul>
-                    <li>
+                    <li class="features-item">
                         <img src="./photos/stars.webp" alt="Premium Quality">
                     <h3 class="features-titels">Premium Quality</h3>
+                    <p class="features-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, maiores quisquam! Est quia ex iusto omnis aspernatur, sit rem explicabo maiores voluptatum, harum fugit dolor eligendi ipsum, a itaque! Magni!</p>
                     </li>
-                    <li>
+
+                    <li class="features-item">
                         <img src="./photos/paints.webp" alt="Indelible paint">
                         <h3 class="features-titels">Indelible paint</h3> 
+                        <p class="features-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, maiores quisquam! Est quia ex iusto omnis aspernatur, sit rem explicabo maiores voluptatum, harum fugit dolor eligendi ipsum, a itaque! Magni!</p>
                     </li>
-                    <li>
+
+                    <li class="features-item">
                         <img src="./photos/bus.webp" alt="Fast shipping">
                         <h3 class="features-titels">Fast shipping</h3>
+                        <p class="features-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, maiores quisquam! Est quia ex iusto omnis aspernatur, sit rem explicabo maiores voluptatum, harum fugit dolor eligendi ipsum, a itaque! Magni!</p>
                     </li>
                 </ul>
             </div>
@@ -218,6 +223,45 @@
             </div>
             </div>
         </div>
+
+
+        <a class="skrol" href="#features"><svg class="skrol-ikon">
+            <use href="./photos/symbol-defs.svg#icon-arrow-up"></use>
+        </svg></a>
     </footer>
+    <div class="backdrop is-hidden" data-modal >
+        <div class="modal">
+            <button class="modal-button" type="button" data-modal-close ><svg class="modal-close">
+                <use href="./photos/symbol-defs.svg#icon-close"></use>
+            </svg></button>
+        <form class="modal-form">
+            <h2 class="modal-titel">Залиште свої дані, ми вам передзвонимо</h2>
+            <label class="modal-lable" >
+                Ім'я
+                <input class="modal-text" type="text" required>
+            </label>
+
+            <label class="modal-lable">
+                Телефон
+                <input class="modal-text" type="tel" required>
+            </label>
+
+            <label class="modal-lable">
+                Пошта
+                <input class="modal-text" type="email" required>
+            </label>
+
+                <label class="modal-lable">
+                    Коментар
+                    <textarea class="modal-coment" placeholder="Введіть текст"></textarea>
+                </label>
+                <input class="modal-check" type="checkbox" required>
+                <p>Погоджуюся з розсилкою та приймаю </p>
+                <a href="#">Умови договору</a>
+                <button type="submit">Відправити</button>
+        </form>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
